@@ -8,7 +8,7 @@ Make sure that the reference genome `your-genome.fasta` has already been indexed
 1. place the genome file `your-genome.fasta` in `genome/` directory
 2. open bash and install bowtie: `sudo apt install bowtie`
 3. navigate into `genome/` directory and type: `bowtie-build your-genome.fasta`
-4. your genome is now ready
+4. the indexing will take several minutes depending on your computer. This process will gives you six files, namely: `your-genome.1.ebwt`, `your-genome.2.ebwt`, `your-genome.3.ebwt`, `your-genome.4.ebwt`, `your-genome.rev.1.ebwt` and `your-genome.rev.1.ebwt`.
 
 # Using CROP
 1.
