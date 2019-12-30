@@ -1,3 +1,6 @@
+#this code is adopted from CRISPOR program (Haeussler et al, 2016) with minor modifications
+#Ref: Genome Biol. 17, 1–12 (2016)
+
 import pickle
 import argparse
 import re
@@ -35,4 +38,4 @@ def calc_cfd(wt,sg,pam):
       key = 'r' + wt_list[i] + ':d' + reverse_complement(sl) + ',' + str(i+1)
       score *= mm_scores[key]
   score *= pam_scores[pam]
-  return (100 * score)
+  return (100 * score) #modified in here
