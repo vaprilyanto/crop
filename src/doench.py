@@ -1,9 +1,8 @@
-# This is a 13 line python function to calculate the sgRNA on-target efficacy score from the article
-# "Rational design of highly active sgRNAs for CRISPR-Cas9–mediated gene inactivation"
-# by J Doench et al. 2014
-# The authors' web tool is available at http://www.broadinstitute.org/rnai/public/analysis-tools/sgrna-design
-# Thanks to Cameron Mac Pherson at Pasteur Paris for fixing my original version. Maximilian Haeussler 2014
- 
+# This code is adopted from CRISPOR program with minor modifications
+# https://github.com/maximilianh/crisporWebsite
+# "Evaluation of off-target and on-target scoring algorithms and integration into the guide RNA selection tool CRISPOR"
+# by M. Haeussler et al. 2016
+
 import math
  
 params = [
@@ -36,10 +35,7 @@ def calc_doench_score(seq):
  
   guide = seq[4:24]
   gc_count = guide.count('G') + guide.count('C')
-  if gc_count <= 10:
-    gc_weight = gc_low
-  if gc_count > 10:
-    gc_weight = gc_high
+  gc_weight = gc_low if gc_count <= 10 else gc_high
   score += abs(10-gc_count)*gc_weight
  
   for pos, model_seq, weight in params:
