@@ -32,6 +32,10 @@ ERROR: genome `<genome>` does not exist. Check it!! | Make sure you type the cor
 `rm` cannot remove: <file> Permission denied | Close all files in the previous `*_out/` folder. File/folder overwrite proceeds if only all the files are closed
 `mkdir` cannot create directory <directory>: File exists | Close all files in the previous `*_out/ folder`. File/folder overwrite proceeds if only all the files are closed
 
+# Licenses
+Included software:
+Bowtie: Artistic License 2.0
+
 # References
 1. Langmead, B., Trapnell, C., Pop, M. & Salzberg, S. L. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol. 10, (2009).
 2. Hsu, P. D. et al. DNA targeting specificity of RNA-guided Cas9 nucleases. Nat. Biotechnol. 31, 827–832 (2013).
