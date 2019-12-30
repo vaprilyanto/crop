@@ -1,5 +1,7 @@
-#this code is adopted from CRISPOR program (Haeussler et al, 2016) with minor modifications
-#Ref: Genome Biol. 17, 1–12 (2016)
+# This code is adopted from CRISPOR program with minor modifications
+# https://github.com/maximilianh/crisporWebsite
+# "Evaluation of off-target and on-target scoring algorithms and integration into the guide RNA selection tool CRISPOR"
+# by M. Haeussler et al. 2016
 
 import pickle
 import argparse
