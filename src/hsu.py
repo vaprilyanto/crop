@@ -1,3 +1,6 @@
+# This code was adopted based on source code by Hari Jay 
+# "https://snipt.net/harijay/fz-score-d1324dab/"
+
 import functools
 import operator
 
