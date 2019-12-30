@@ -17,29 +17,6 @@ def base_substitute(seq):
           yield seq[:i] + 'u' + seq[i+1:i+j] + 'v' + seq[i+j+1:i+j+k-1] + \
               'w' + seq[i+j+k:i+j+k+l-3] + 'x' + seq[i+j+k+l-2:]
 
-'''
-five_subs and six_subs
-def subs(seq):
-  for i in range(0, len(seq)-4):
-    for j in range(1, len(seq)-3):
-      for k in range(2, len(seq)-2):
-        for l in range(3, len(seq)-1):
-          for m in range(4, len(seq)):
-            yield seq[:i] + 'u' + seq[i+1:i+j] + 'v' + seq[i+j+1:i+j+k-1] + \
-                  'w' + seq[i+j+k:i+j+k+l-3] + 'x' + seq[i+j+k+l-2:i+j+k+l+m-6] +\
-                  'y' + seq[i+j+k+l+m-5:]
-def subs(seq):
-  for i in range(0, len(seq)-5):
-    for j in range(1, len(seq)-4):
-      for k in range(2, len(seq)-3):
-        for l in range(3, len(seq)-2):
-          for m in range(4, len(seq)-1):
-            for n in range(5, len(seq)):
-              yield seq[:i] + 'u' + seq[i+1:i+j] + 'v' + seq[i+j+1:i+j+k-1] + \
-                    'w' + seq[i+j+k:i+j+k+l-3] + 'x' + seq[i+j+k+l-2:i+j+k+l+m-6] +\
-                    'y' + seq[i+j+k+l+m-5:i+j+k+l+m+n-10] + 'z' + seq[i+j+k+l+m+n-9:]
-'''
-
 # substitute every combination of base positions to '-'
 def base_delete(seq):
   for i in range(0, len(seq)-1):
