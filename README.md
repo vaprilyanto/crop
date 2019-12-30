@@ -34,7 +34,7 @@ ERROR: genome `<genome>` does not exist. Check it!! | Make sure you type the cor
 
 # Licenses
 Included software:
-Bowtie: Artistic License 2.0
+* Bowtie: Artistic License 2.0
 
 # References
 1. Langmead, B., Trapnell, C., Pop, M. & Salzberg, S. L. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol. 10, (2009).
