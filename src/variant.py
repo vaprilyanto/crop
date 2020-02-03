@@ -75,10 +75,7 @@ def filter_substitute(seq):
 # filtering duplicates from base_delete(seq)
 def filter_delete(seq):
   for guide in base_delete(seq):
-    if guide[-1] == '-' or guide[-2:] == '--'\
-       or guide[-3:] == '---' or guide[-4:] == '----':
-      pass
-    else: yield guide.replace('-', '')
+    yield guide.replace('-', '')
 
 # filtering duplicates from base_insert(seq)
 def filter_insert(seq):
