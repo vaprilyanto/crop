@@ -44,4 +44,4 @@ python3 main_guide_align.py $path2/$(cut -d. -f1 <<<`basename $1`)_out_guide_lis
 echo "Done aligning" $(cut -d. -f1 <<<`basename $1`)
 echo "=== STEP 4 done! ==="
 echo ""
-echo "This analysis was run using cas_191219"
+echo "This analysis was run using CROP update 200131"
